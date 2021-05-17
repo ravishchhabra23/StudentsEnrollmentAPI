@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Interfaces\**" />
+    <Compile Remove="Repositories\**" />
+    <EmbeddedResource Remove="Interfaces\**" />
+    <EmbeddedResource Remove="Repositories\**" />
+    <None Remove="Interfaces\**" />
+    <None Remove="Repositories\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.1.0" />
+    <PackageReference Include="FluentValidation" Version="9.3.0" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StudentsEnrollment\StudentsEnrollment.Persist.csproj" />
+  </ItemGroup>
+
+</Project>
