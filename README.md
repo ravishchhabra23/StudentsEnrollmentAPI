@@ -11,6 +11,12 @@ This excercise returns students and add a student in the database.
 
 Rest of the operations were not developed but will be mostly similar to the operations developed.
 
+### Response for AddStudent
+![image](https://user-images.githubusercontent.com/28916581/118520381-60eef480-b77d-11eb-9933-f06e7d294309.png)
+
+### Response for GetStudents
+![image](https://user-images.githubusercontent.com/28916581/118520770-b0352500-b77d-11eb-899c-8b01c886686b.png)
+
 ## Technical Details
 - Solution is developed using .NET Core 3.1 and Asp.Net Web Api. EntityFrameworkCore is used with code first approach following the DDD approach.
 - CQRS pattern is implemented with mediator to bring in the abstraction layer for the interactions with the database. This will particularly be beneficial in   microservices architectures where we can have read and write databases seperately for performance.
